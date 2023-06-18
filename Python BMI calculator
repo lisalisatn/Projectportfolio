@@ -1,0 +1,30 @@
+#BMI = int((weight in pounds x 703) / (height in inches x height in inches))
+
+weight = int(input("Enter your weight in pounds: "))
+height = input("Enter your height in inches: ")
+BMI = (weight * 703) / (height * height)
+
+print(BMI)
+
+
+
+Under 18.5 -> Underweight
+18.5 - 24.9 -> Normal weight
+25 - 29.9 -> Overweight
+30 - 34.9 -> Obese
+35 - 39.9 -> Severly obese
+40 and over -> Morbidly obese
+
+if BMI>0:
+  if(BMI<18.5):
+    print("Underweight")
+  elif (BMI<=24.9):
+    print("Normal weight")
+  elif (BMI<29.9):
+    print("Overweight")
+  elif (BMI<34.9):
+    print("Obese")
+  elif (BMI<39.9):
+    print("Severly obese")
+else:
+  print("Enter valid inputs")
